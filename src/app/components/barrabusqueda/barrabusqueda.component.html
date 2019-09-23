@@ -1,0 +1,20 @@
+<div class="container-fluid search-bar">
+  <div class="row">
+    <div class="col-md-8 row">
+      <div class="col-md-9">
+        <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="" #busqueda
+          (keyup.enter)="buscar(busqueda.value)" />
+      </div>
+      <div class="col-md-3">
+        <button (click)="buscar(busqueda.value)" class="btn btn-outline-dark my-2 my-sm-0" type="button">
+          Buscar..
+        </button>
+      </div>
+    </div>
+    <div class="col-md-4 text-right">
+      <button routerLink="/usuario/nuevo" class="btn btn-primary mb-3">
+        Crear usuario<i class="fa fa-plus ml-3"></i>
+      </button>
+    </div>
+  </div>
+</div>
